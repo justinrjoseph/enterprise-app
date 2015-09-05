@@ -19,7 +19,7 @@
           <th>Date</th>
           <th>Company</th>
           <th>Tax</th>
-          <th>Salesperson</th>
+          <th>Employee</th>
           <th>Status</th>
           <th colspan="3"></th>
         </tr>
@@ -31,7 +31,7 @@
             <td><%= invoice.date.strftime('%m/%d/%Y') %></td>
             <td><%= invoice.company %></td>
             <td><%= invoice.tax %></td>
-            <td><%= invoice.salesperson %></td>
+            <td><%= invoice.employee_id %></td>
             <td><%= invoice.status %></td>
             <td><%= link_to 'Show', invoice, class: 'btn btn-mini' %></td>
             <td><%= link_to 'Edit', edit_invoice_path(invoice),
