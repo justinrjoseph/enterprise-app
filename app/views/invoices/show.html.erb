@@ -33,6 +33,7 @@
           <th>Name</th>
           <th>Category</th>
           <th>Quantity</th>
+          <th>Price</th>
           <th>Delete?</th>
         </tr>
       </thead>
@@ -42,6 +43,7 @@
           <td><h4><%= purchase.name %></h4></td>
           <td><h4><%= purchase.category %></h4></td>
           <td><h4><%= purchase.quantity %></h4></td>
+          <td><h4><%= number_to_currency purchase.price %></h4></td>
           <td>
             <h4>
               <%= link_to "Yes", [@invoice, purchase], method: :delete, data: {
